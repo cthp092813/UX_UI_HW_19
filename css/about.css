@@ -1,0 +1,268 @@
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+
+p{
+    font-family: 'DM sans', sans-serif;
+    font-size: 20px;
+}
+
+/*Navigation*/
+
+.navigation{
+    width: auto;
+    display: flex;
+    height: 113px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px black;
+    gap: 50%;
+}
+
+.logo{
+    font-weight: 700px;
+}
+
+.logo a{
+    color:black;
+    text-decoration: none;
+}
+
+.nav{
+    font-family: 'DM sans', sans-serif;
+    font-size: 18px;
+    display: flex;
+    width: 212px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10%;
+    flex-shrink: 0;    
+}
+
+.nav li{
+    display: flex;
+    width: 60px;
+    height: 33px;
+    padding: 0px 0px 7px 12px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+li a{
+    color:black;
+    text-decoration: none;
+}
+
+.active{
+    text-decoration: underline;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+/*About Me*/
+
+#selfie{
+    width: 50%;
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+h2{
+    font-family: 'Playfair Display', sans-serif;
+    font-size:50px;
+}
+
+.aboutme{
+    display:flex;
+    flex-direction: row;
+    gap: 54px;
+    padding: 25px 100px;
+}
+
+/*My UX/UI Skills*/
+
+#skills{
+    text-align: center;
+}
+
+h4{
+    font-size: 30px;
+}
+
+.Skills{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "research empathy interviews tools"
+    "testing ia wireframe coding"
+}
+
+#research{
+    grid-area: "research";
+}
+
+#empathy{
+    grid-area: "empathy";
+}
+
+#interviews{
+    grid-area: "interviews";
+}
+
+#tools{
+    grid-area: "tools";
+}
+
+#testing{
+    grid-area: "testing";
+}
+
+#ia{
+    grid-area: "ia";
+}
+
+#wireframe{
+    grid-area: "wireframe";
+}
+
+#coding{
+    grid-area: "coding";
+}
+
+.askill{
+    margin: 10px;
+}
+
+.uxskills{
+    padding: 0px 100px;
+}
+
+.uxskills p{
+    font-size: 18px;
+}
+
+.tools li{
+    font-family: "DM sans", sans-serif;
+    font-size: 18px;
+    text-align: left;
+    padding: 5px;
+}
+
+/*What I Do When I'm Not Working*/
+
+.notworking{
+    display:flex;
+    flex-direction: row;
+    padding: 0px 100px;
+    padding-bottom: 50px;
+}
+
+figcaption{
+    font-size: 20px;
+    font-family: 'DM sans', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Footer*/
+
+footer{
+    width: auto;
+    height: auto;
+    border-top: 1px solid black;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30%;
+}
+
+.footernav{
+    font-family: 'DM sans', sans-serif;
+    font-size: 18px;
+    display: flex;
+    width: 212px;
+    justify-items: center;
+    align-items: center;
+    gap: 10%;
+    flex-shrink: 0;   
+}
+
+.footernav li{
+    list-style-type: none;
+}
+
+.logo2 a{
+   color: black;
+   text-decoration: none;
+}
+
+hr{
+    width: 95%;
+    align-content: center;
+}
+
+.inline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70%;
+}
+
+#copyright{
+    font-size: 14px;
+}
+
+/*Responsive*/
+
+@media only screen and (min-width:320px) and (max-width: 768px){
+    .nav{
+        display: none;
+    }
+
+    .footernav{
+        display: none;
+    }
+}
+
+@media only screen and(max-width: 320px){
+    h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 30px;
+    }
+    
+    p{
+        font-family: 'DM sans', sans-serif;
+        font-size: 18px;
+    }
+
+    .aboutme{
+        flex-direction: column;
+    }
+
+    .Skills{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "research empathy interviews" 
+        "tools testing ia"
+        "wireframe coding tools";
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    .notworking{
+        flex-direction: column;
+    }
+}
