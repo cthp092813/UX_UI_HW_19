@@ -67,15 +67,24 @@ li a:hover{
 
 .heroImg{
     background-image: url("../images/Flower\ Hero\ Bkgd\ Img.png");
+    background-size: cover;
     width: 100%;
     height: 644px;
-    display: grid;
-    grid-template-columns: 95% 5%;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    'herocontent LinkedIn';
-    justify-items: center;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    gap: 5%
+}
+
+.center{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-left: 7.5%;
+    gap: 130px;
 }
 
 .content{
@@ -86,13 +95,9 @@ li a:hover{
     line-height: 25px;
 }
 
-#herocontent{
-    grid-area:"herocontent";
-}
 #LinkedIn{
     width: 40px;
     height: 40px;
-    grid-area:"LinkedIn";
 }
 
 #myname{
@@ -105,8 +110,8 @@ li a:hover{
     height: 1138px;
     background-color: black;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(100px, auto);
     grid-template-areas:
     "ppc fcc"
     "ff ff";
@@ -118,6 +123,8 @@ li a:hover{
     grid-area:'ppc';
     background-image: url("../images/PPC\ Display\ Mockups.png");
     background-color: #606C38;
+    margin-left:auto;
+    margin-top: auto;
 }
 
 #ppc:hover{
@@ -129,6 +136,8 @@ li a:hover{
     grid-area: 'fcc';
     background-image: url("../images/FCC\ Display\ mockups.png");
     background-color: #778DA9;
+    margin-right: auto;
+    margin-top: auto;
 }
 
 #fcc:hover{
@@ -139,6 +148,7 @@ li a:hover{
 #ff{
     grid-area: 'ff';
     background-image: url("../images/FF\ section.png");
+    margin-left: auto;
 }
 
 #ff:hover{
@@ -149,8 +159,10 @@ li a:hover{
 .projectcontent{
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 436px;
-    width: 85%;
+    width: 72%;
+    margin: 40px;
 }
 
 /*Footer*/
