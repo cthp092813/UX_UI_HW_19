@@ -13,7 +13,7 @@ p{
 .navigation{
     width: auto;
     display: flex;
-    height: 113px;
+    height: 100px;
     justify-content: center;
     align-items: center;
     border-bottom: solid 1px black;
@@ -130,6 +130,7 @@ li a:hover{
 #ppc:hover{
     background-image: url("../images/PPC\ case\ study\ hover.png");
     cursor:pointer;
+    background-size: fit;
 }
 
 #fcc{
@@ -138,6 +139,7 @@ li a:hover{
     background-color: #778DA9;
     margin-right: auto;
     margin-top: auto;
+    
 }
 
 #fcc:hover{
@@ -148,7 +150,6 @@ li a:hover{
 #ff{
     grid-area: 'ff';
     background-image: url("../images/FF\ section.png");
-    margin-left: auto;
 }
 
 #ff:hover{
@@ -161,7 +162,7 @@ li a:hover{
     background-repeat: no-repeat;
     background-size: cover;
     height: 436px;
-    width: 72%;
+    width: 85%;
     margin: 40px;
 }
 
