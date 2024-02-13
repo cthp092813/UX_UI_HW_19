@@ -150,6 +150,8 @@ li a:hover{
 #ff{
     grid-area: 'ff';
     background-image: url("../images/FF\ section.png");
+    grid-column: 1 /span 2;
+    width: 91%;
 }
 
 #ff:hover{
