@@ -120,6 +120,7 @@ li a:hover{
 }
 
 #ppc{
+    display: block;
     grid-area:'ppc';
     background-image: url("../images/PPC\ Display\ Mockups.png");
     background-color: #606C38;
